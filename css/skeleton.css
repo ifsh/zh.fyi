@@ -465,8 +465,8 @@ label>.label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle outside;
-  margin-left: 2rem;
+  list-style: disc outside;
+  margin-left: 3rem;
 }
 
 ol {
