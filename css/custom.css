@@ -38,7 +38,7 @@ img {
   max-width: 100%;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.6);
   margin-bottom: 1%;
 }
 
