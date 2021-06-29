@@ -71,15 +71,13 @@
     <link href="https://zh.fyi/post/38241/"/>
     <id>https://zh.fyi/post/38241/</id>
     <published>2020-05-12T15:46:56.000Z</published>
-    <updated>2021-03-25T14:34:31.470Z</updated>
+    <updated>2021-06-29T09:34:12.848Z</updated>
     
     <content type="html"><![CDATA[<p>做播客的想法于 2015 年萌生，2016 年购买了一个域名，然后……</p><p>……到了 2019 年。</p><p>去年某天想着一定要把播客做起来，重新购买了域名，画了一个丑丑的 Logo（经过数次迭代后，算是能看了）。<br><img src="/img/01.png"><br>播客除了内容之外，最重要的便是音频托管与分发了。查看了一些我经常听的播客节目，音频托管基本上有这么三类：国内托管平台（荔枝、喜马拉雅等）、第三方平台（Typlog、Fireside, etc.）、自建。</p><p>国内平台除了审查之外，还有各种糟心的事儿，比如严管 Show Notes、插广告等等，所以不考虑；自建当时感到很麻烦，要做到相对比较好的体验会花费更多的时间、精力跟钱，所以顺势就选择第三方平台，经过价格的对比之后，排除更流行的 Fireside，来到了 Typlog 上。</p><p>Typlog 当时的收费方案是 $50/年，可以托管三个站点，不限播客或者博客。一年时间，我陆续把一个博客（<a href="https://zhaliezhi.com/">炸裂志</a>）、两个播客（<a href="https://epf.xyz/">耳旁风</a>、<a href="https://bds.wht.one/">不动声色</a>）都放到了 Typlog 上。总的来说体验还是不错的，但对于一些细节的处理上比如 Archive 的样式、footer 样式等等不是我喜欢的风格，而这些都是不可更改的。</p><p>促使我做出迁移决定的主要是价格，Typlog 变更了收费方式，播客、博客站点单独订阅单独收费，我计算了一下，如果还需要维持三个站点的订阅，最低档的套餐加起来也要 $220/年。跟一年前的费用比起来涨价了 340%，这是一个巨大的增幅。</p><p>一番思量之后，把 <a href="https://zhaliezhi.com/">炸裂志</a>、<a href="https://bds.wht.one/">不动声色</a> 迁移，留下 <a href="https://epf.xyz/">耳旁风</a> 留在 Typlog 上，让国内的用户有比较好的收听体验。</p><p>看了一些评测文章后，选定了 <a href="https://anchor.fm/">Anchor</a> 托管播客，主要优点有：1.全免费；2.有简单的可视化图表；3.多人线上录制、线上剪辑。缺点有：1.国内用户不可访问；2.不能绑定 Custom domains；3.不能修改 RSS 链接；4.Show Notes 编辑器体验不好。但总归来说一个完全免费就能战胜所有缺点了，毕竟免费的午餐吃起来还是很香的。</p><p>Anchor 成立于 2015 年，成立之初便以免费托管吸引主播，但据我了解那时候 Anchor 会在播客里插入广告以及在 Logo 上加上不可去除的 Anchor Logo. 这些情况在被 Spotify 收购之后做出了改变，广告及 Anchor Logo 变成了可选项，使得 Anchor 的优势增加了不少。</p><p>目前「不动声色」分为两个部分：RSS 和官网。RSS 托管与分发由 Anchor 进行，官网由 Hexo 驱动，托管在 GitHub Pages 上。虽然 RSS 在国内不可访问，但网站上的在线播放国内是可以收听的。</p><p>最后，欢迎收听不动声色，这是一档声音记录类播客节目，旨在呈现多样且有趣的声音。没有主题、没有制式。TTS(Text-to-Speech) 包括 Siri、阿里云tts，以后还会加入更多有趣的声音。</p><p>RSS Feed: <a href="https://bds.wht.one/feed.xml">https://bds.wht.one/feed.xml</a></p><p>这个 RSS Feed 链接可以使用各类泛用型播客客户端进行收听，需翻墙。再说一下各个平台 RSS 更新遇到的事情，Spotify 和 Apple Podcasts 可以在管理页面直接更新 RSS，成功之后输出的链接是不变的，而 Overcast 则跟随 Apple Podcasts，所以这三家客户端的用户无须进行任何操作，会自动更新。其他客户端诸如 Castro、Pocket Casts、Google Podcasts 等需要重新订阅，原 RSS 应该不会自动更新。</p><div align=center><img src="https://cdn.jsdelivr.net/gh/ifsh/i.wht/zhaliezhi/tra-0382.png"/></div><font size=2><center>左：Typlog 下载音频；中：原音频；右：Anchor 下载音频</center></font><p><del>可以看出 Typlog 不会对音频做压缩、转换格式等处理，忠于原始音频。而 Anchor 则会做一些处理，但在听感上暂时还没有发现有什么区别，这点补上。</del></p><p>20200512 更新：</p><ul><li><p>Anchor 节目的 Show Notes (Episode description) 限制字数 1000 字。</p></li><li><p>由于 Anchor 音频存储在亚马逊 AWS，使用 Cloudflare CDN 分发，导致有不同的格式。经过下载对比，推送到播客客户端的音频文件与原始音频大小相同，之后会写一篇文章探究。</p></li></ul><p>20200603 更新：</p><ul><li>Anchor 目前无法直接更新密码，官方建议是在登录页面「忘记密码」然后根据邮件链接修改。如果你修改过 Podcast settings → About you 里的邮箱的话，登录邮箱也会随之改变。</li></ul><p>20200811 更新：</p><ul><li>原域名 bds.wtf 续费太贵，现已迁移到 wht.one 的二级域名。</li></ul>]]></content>
     
     
     <summary type="html">从托管到自建，记录我对「不动声色」这个小播客所做的一些尝试。</summary>
     
-    
-    <content src="https://zhfyi.com/img/cover/10.jpg" type="image"/>
     
     
     
