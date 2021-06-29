@@ -149,12 +149,48 @@
 
         <div class="row">
   <div class="two columns" style="max-width: 50px">
+    <h1 class="mt-2 mode">
+      <div onclick=setDarkMode(true) id="darkBtn">🌑</div>
+      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>☀️</div>
+      <script >
+        if (localStorage.getItem('preferredTheme') == 'dark') {
+          setDarkMode(true)
+        }
+        function setDarkMode(isDark) {
+          var darkBtn = document.getElementById('darkBtn')
+          var lightBtn = document.getElementById('lightBtn')
+          if (isDark) {
+            lightBtn.style.display = "block"
+            darkBtn.style.display = "none"
+            localStorage.setItem('preferredTheme', 'dark');
+          } else {
+            lightBtn.style.display = "none"
+            darkBtn.style.display = "block"
+            localStorage.removeItem('preferredTheme');
+          }
+          document.body.classList.toggle("darkmode");
+        }
+      </script>
+    </h1>
+  </div>
+
+  <div class="six columns ml-1">
+    <h1 class="mt-2">
+      𝕫𝕙.𝕗𝕪𝕚
+    </h1>
+  </div>
+
+  <div class="two columns" style="max-width: 50px">
   </div>
 
   <div class="twelve columns">
     <div class="row">
       <div class="nine columns left">
-        <a href="/">𝕫𝕙.𝕗𝕪𝕚</a>
+        <a href="/">ℍ𝕠𝕞𝕖</a>
+        
+          
+          <a href="/feed.xml" class="ml">ℝ𝕊𝕊</a>
+          
         
           
           <a href="/about" class="ml">𝔸𝕓𝕠𝕦𝕥</a>
@@ -291,20 +327,6 @@
     <a href="/post/65872/" >
       
         骑行西藏万里路：2015 年的记忆碎片
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2019-06-26</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/post/32984/" >
-      
-        单车骑行东南亚：泰国篇
       
     </a>
   </div>
