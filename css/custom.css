@@ -182,15 +182,15 @@ body.darkmode li p code {
 
 /* blockquote */
 blockquote {
-  font-family: 'Inter';
+  font-family: 'HelveticaNeue';
   background-color: rgba(148, 148, 149, 0.08) ;
   margin: 1.5em 0px;
   padding: 1.1em 20px 1px 20px;
-  font-style: italic;
+  font-style: normal;
 }
 
 blockquote footer {
-  font-family: 'Inter';
+  font-family: 'HelveticaNeue';
   font-size: 16px;
   padding-bottom: 10px;
   margin-top: -10px;
