@@ -248,8 +248,14 @@ a.footer-link:focus {
 .twitter {
   fill: #1DA1F2;
 }
+.telegram {
+  fill: #26A5E4;
+}
+.rss {
+  fill: #FFA500;
+}
 .instagram {
-  fill: #E4405F
+  fill: #E4405F;
 }
 .stackoverflow {
   fill: #ca7516;
